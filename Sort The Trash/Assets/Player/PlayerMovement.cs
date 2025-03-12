@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed;
+    public GameObject cameraMovement;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +23,19 @@ public class PlayerMovement : MonoBehaviour
         movementDirection.Normalize();
 
         transform.Translate(movementDirection * speed * Time.deltaTime, Space.World);
+        
+       // Vector3 cameraDirection = new Vector3(horizontalInput, 0, verticalInput);
+       // transform.Translate(cameraDirection * speed * Time.deltaTime, Space.World);
 
         if (movementDirection != Vector3.zero)
         {
             transform.forward = movementDirection;
         }
+
+      //  Vector3 cameraMovement = new Vector3(movementDirection.x, 0, movementDirection.z); 
+       // cameraMovement.Normalize();
+
+       // transform.Translate(cameraMovement * speed * Time.deltaTime, Space.World);
 
     }
 }
