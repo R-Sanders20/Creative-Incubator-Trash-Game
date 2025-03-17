@@ -52,7 +52,7 @@ public class SpawnCollectable : MonoBehaviour
         {
             SpawnRandomCollectable();
             Debug.Log("Spawned collectable at timestamp : " + Time.time);
-            yield return new WaitForSeconds(5); // Wait for 5 seconds before spawning the next collectable
+            yield return new WaitForSeconds(3); // Wait for 5 seconds before spawning the next collectable
         }
         Debug.Log("Polloution exceeded 100%");
     }
