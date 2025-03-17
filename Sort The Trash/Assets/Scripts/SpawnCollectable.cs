@@ -16,7 +16,8 @@ public class SpawnCollectable : MonoBehaviour
         // 13.63 1 5.66 Current test room area
         float x = Random.Range(Area.x - AreaSize.x / 2, Area.x + AreaSize.x / 2);
         float z = Random.Range(Area.z - AreaSize.z / 2, Area.z + AreaSize.z / 2);
-        Vector3 randomPosition = new Vector3(x, z);
+        float y = Random.Range(Area.y - AreaSize.y / 2, Area.y + AreaSize.y / 2);
+        Vector3 randomPosition = new Vector3(x, y, z);
 
         Instantiate(collectable, randomPosition, Quaternion.identity);
     }
