@@ -1,13 +1,18 @@
+using TMPro;
 using UnityEngine;
 
 public class SpawnCollectable : MonoBehaviour
 {
+    public TextMeshProUGUI pollutionText;
+    int pollutionLevel = 0;
+
     public GameObject collectable; 
     public Vector3 Area; 
     public Vector3 AreaSize; 
 
     void Start()
     {
+        pollutionText.text = "Pollution : " + pollutionLevel.ToString() + " %";
         SpawnRandomCollectable();
     }
 
@@ -20,6 +25,9 @@ public class SpawnCollectable : MonoBehaviour
         Vector3 randomPosition = new Vector3(x, y, z);
 
         Instantiate(collectable, randomPosition, Quaternion.identity);
+
+        pollutionLevel += 20;
+        pollutionText.text = "Pollution : " + pollutionLevel.ToString() + " %";
     }
 
     
