@@ -11,6 +11,12 @@ public class CollectableInteraction : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Entered Trigger with: " + other.tag);
+        
+        if (other.CompareTag("Water"))
+        {
+                transform.position = new Vector3(50.12734f, -0.841f, 1.243f);
+        }
+
         if (other.CompareTag("Black Collectable") && collected == false)
         {
             blackCollectableStored++;
@@ -27,9 +33,7 @@ public class CollectableInteraction : MonoBehaviour
                 Debug.Log("Black Collectables now at: " + blackCollectableStored);
                 spawnCollectableScript.Deposited();
                 collected = false;
-
             }
-
             else
             {
                 Debug.Log("no trash");
