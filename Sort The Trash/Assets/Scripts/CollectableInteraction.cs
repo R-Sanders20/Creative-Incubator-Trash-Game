@@ -6,15 +6,17 @@ public class CollectableInteraction : MonoBehaviour
 {
     int blackCollectableStored = 0;
     public SpawnCollectable spawnCollectableScript; // Reference to SpawnCollectable script
+    public bool collected;
 
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Entered Trigger with: " + other.tag);
-        if (other.CompareTag("Black Collectable"))
+        if (other.CompareTag("Black Collectable") && collected == false)
         {
             blackCollectableStored++;
             Debug.Log("Collectables:" + blackCollectableStored);
             Destroy(other.gameObject);
+            collected = true;
         }
 
         if (other.CompareTag("Black Bin"))
@@ -24,6 +26,7 @@ public class CollectableInteraction : MonoBehaviour
                 blackCollectableStored--;
                 Debug.Log("Black Collectables now at: " + blackCollectableStored);
                 spawnCollectableScript.Deposited();
+                collected = false;
 
             }
 
