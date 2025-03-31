@@ -7,10 +7,10 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     public GameObject cameraMovement;
 
+
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -32,10 +32,9 @@ public class PlayerMovement : MonoBehaviour
             transform.forward = movementDirection;
         }
 
-      //  Vector3 cameraMovement = new Vector3(movementDirection.x, 0, movementDirection.z); 
-       // cameraMovement.Normalize();
+        //  Vector3 cameraMovement = new Vector3(movementDirection.x, 0, movementDirection.z); 
+        // cameraMovement.Normalize();
 
-       // transform.Translate(cameraMovement * speed * Time.deltaTime, Space.World);
-
+        // transform.Translate(cameraMovement * speed * Time.deltaTime, Space.World);
     }
 }
