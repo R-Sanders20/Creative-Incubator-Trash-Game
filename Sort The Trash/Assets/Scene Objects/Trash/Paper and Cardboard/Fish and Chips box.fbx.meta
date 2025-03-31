@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 036893a53aa020243b756c89dbfae0d5
+guid: 23686485fc4dfee4694030b5d1ca33f2
 ModelImporter:
   serializedVersion: 22102
   internalIDToNameTable: []
@@ -7,8 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: napkin
-    second: {fileID: 2100000, guid: 3768f6e24410d874eb8a9fe2f2112e1e, type: 2}
+      name: Fish_and_chips_box
+    second: {fileID: 2100000, guid: ddf627618e7ed9f4989c3bd58d1d4c0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fish_and_chips_box1
+    second: {fileID: 2100000, guid: 67e438056a9e0b94daf2935808cca739, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grease_paper
+    second: {fileID: 2100000, guid: f60fa53e29851fe46bd1f94e78ed58f2, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fish & Chips Texture
+    second: {fileID: 2800000, guid: bd9de4fae3dbf7546aa8a87147abb9e2, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -40,7 +55,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 2
+    globalScale: 7
     meshCompression: 0
     addColliders: 1
     useSRGBMaterialColor: 1
@@ -94,7 +109,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.02
+    globalScale: 0.07
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
