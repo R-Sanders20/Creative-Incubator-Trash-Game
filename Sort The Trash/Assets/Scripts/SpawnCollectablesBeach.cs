@@ -40,12 +40,12 @@ public class SpawnCollectablesBeach : MonoBehaviour
 
     public void Deposited()
     {
-        pollutionLevel -= 20;
+        pollutionLevel -= 1;
     }
 
     void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.blue;
         Gizmos.DrawWireCube(Area, AreaSize);
     }
 

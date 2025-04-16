@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -833,7 +833,7 @@ Transform:
   - {fileID: 1392961695}
   - {fileID: 2092433950}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &212353794 stripped
 GameObject:
@@ -943,7 +943,7 @@ Transform:
   m_Children:
   - {fileID: 1521234887}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &247669180
 PrefabInstance:
@@ -1149,6 +1149,69 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 63e7315f5c70c044d823380f8249a5ff, type: 3}
+--- !u!1001 &333094330
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 20f6fcdb2b7eda245b3080b9c1c3343d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 20f6fcdb2b7eda245b3080b9c1c3343d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 34.7378
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 20f6fcdb2b7eda245b3080b9c1c3343d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.2724537
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 20f6fcdb2b7eda245b3080b9c1c3343d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.805862
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 20f6fcdb2b7eda245b3080b9c1c3343d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 20f6fcdb2b7eda245b3080b9c1c3343d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 20f6fcdb2b7eda245b3080b9c1c3343d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 20f6fcdb2b7eda245b3080b9c1c3343d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 20f6fcdb2b7eda245b3080b9c1c3343d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 20f6fcdb2b7eda245b3080b9c1c3343d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 20f6fcdb2b7eda245b3080b9c1c3343d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 20f6fcdb2b7eda245b3080b9c1c3343d, type: 3}
+      propertyPath: m_Name
+      value: Bottle Cap Metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 20f6fcdb2b7eda245b3080b9c1c3343d, type: 3}
+      propertyPath: m_TagString
+      value: Blue Collectable
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 20f6fcdb2b7eda245b3080b9c1c3343d, type: 3}
 --- !u!1 &367426232
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,6 +1375,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3f67825912fc585428ad089539234be5, type: 3}
       propertyPath: m_Name
       value: IndoorBin_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3f67825912fc585428ad089539234be5, type: 3}
+      propertyPath: m_TagString
+      value: Green Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -1844,6 +1911,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndoorBin_Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42f029534c47c18409fe41b3254f0afb, type: 3}
+      propertyPath: m_TagString
+      value: Blue Bin
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 42f029534c47c18409fe41b3254f0afb, type: 3}
@@ -2002,7 +2073,7 @@ HingeJoint:
   m_Anchor: {x: -0.72, y: 1.63, z: 0}
   m_Axis: {x: 1, y: -90, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 4.6371965, y: 3.78674, z: -13.442}
+  m_ConnectedAnchor: {x: 4.6371956, y: 3.7867393, z: -13.442001}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -2571,7 +2642,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: 0, z: 0}
 --- !u!114 &876436372
 MonoBehaviour:
@@ -2598,8 +2669,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 880988570}
-  - component: {fileID: 880988571}
-  - component: {fileID: 880988572}
   m_Layer: 0
   m_Name: Beach
   m_TagString: Untagged
@@ -2634,75 +2703,6 @@ Transform:
   m_Father: {fileID: 205780782}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &880988571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 880988569}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38d1bdc1de5fa3345ad06427d975a54b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pollutionText: {fileID: 491847461}
-  collectable: {fileID: 6367074798890879593, guid: 3a57ad1b76e46ba4683c3cb44d91d420, type: 3}
-  Area: {x: 48, y: 0, z: 0}
-  AreaSize: {x: 10, y: 0, z: 10}
---- !u!114 &880988572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 880988569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d2cf047e3c395e4eae69e5e6733b274, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pollutionText: {fileID: 491847461}
-  collectables:
-  - {fileID: 6367074798890879593, guid: 3a57ad1b76e46ba4683c3cb44d91d420, type: 3}
-  - {fileID: 919132149155446097, guid: ab0ca76107eb25e4b85826d3691b729b, type: 3}
-  - {fileID: 919132149155446097, guid: d0a322c0ceba8214da434d10ecb4f2fb, type: 3}
-  - {fileID: 919132149155446097, guid: 3becdb68c8859ae4482679763b0e3a32, type: 3}
-  - {fileID: 919132149155446097, guid: 973b4c340b4dd9e4b94a730c1345b777, type: 3}
-  - {fileID: 919132149155446097, guid: 33f090976ad91d547affeb1d35d66707, type: 3}
-  - {fileID: 919132149155446097, guid: c196867ad3638bf4e82aab36dc0624ff, type: 3}
-  - {fileID: 919132149155446097, guid: d850c87365bb33e48be1dac2174061c1, type: 3}
-  - {fileID: 919132149155446097, guid: 22346a9b1cfe76140872e4bcc5e349b6, type: 3}
-  - {fileID: 919132149155446097, guid: 23686485fc4dfee4694030b5d1ca33f2, type: 3}
-  - {fileID: 919132149155446097, guid: 036893a53aa020243b756c89dbfae0d5, type: 3}
-  - {fileID: 919132149155446097, guid: 1ca714965677bf748b99afdda871d842, type: 3}
-  - {fileID: 919132149155446097, guid: 7689f08dfe0441844844e10893796980, type: 3}
-  - {fileID: 919132149155446097, guid: c297b74bb85ef274eb48e43b12f69bf5, type: 3}
-  - {fileID: 919132149155446097, guid: 21240d26d01bdbf49ab415009100f646, type: 3}
-  - {fileID: 919132149155446097, guid: 73ea1fc18a01c2e4da6fff251800df2c, type: 3}
-  - {fileID: 919132149155446097, guid: 6aa88431b088dbb4581f5898c2eae6a5, type: 3}
-  - {fileID: 919132149155446097, guid: b0dd51b4b4deb464b862d2c49f1c5638, type: 3}
-  - {fileID: 919132149155446097, guid: 6ac5831dd20643948b9cfc45d85580c9, type: 3}
-  - {fileID: 919132149155446097, guid: dee88eee3da13c2408abba916726900d, type: 3}
-  - {fileID: 919132149155446097, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
-  - {fileID: 919132149155446097, guid: 80e95992761661b4291805485dd3d9dd, type: 3}
-  - {fileID: 919132149155446097, guid: e909331ec9fe69a47934f9f790aac2b5, type: 3}
-  - {fileID: 919132149155446097, guid: 8477636cb9296324d8b829e87c0fd9a7, type: 3}
-  - {fileID: 919132149155446097, guid: 25ad5096f56d5644dab8d2c8ce80e2a7, type: 3}
-  - {fileID: 919132149155446097, guid: 884307289dabd0843b8100fa92fe4fc8, type: 3}
-  - {fileID: 919132149155446097, guid: 20f6fcdb2b7eda245b3080b9c1c3343d, type: 3}
-  - {fileID: 919132149155446097, guid: 55801aa17a5dd9a41800000a3dfcbb32, type: 3}
-  - {fileID: 919132149155446097, guid: 5f46a3b7077245e47b8bdec9f569ee4c, type: 3}
-  - {fileID: 919132149155446097, guid: f4f5311350d2a7742b9221bd689e543e, type: 3}
-  - {fileID: 919132149155446097, guid: 932170d749119d04c9424fe23c7d1510, type: 3}
-  - {fileID: 919132149155446097, guid: 908591e3e7c07cf4f81c40a544ae8242, type: 3}
-  - {fileID: 919132149155446097, guid: 2c4e4aa94ef3fb84b86bdabb20d87e0d, type: 3}
-  - {fileID: 919132149155446097, guid: 85aa97e90794467488a71b6919244626, type: 3}
-  - {fileID: 919132149155446097, guid: ac8d3c92ab85ebb4083faadc84a2b025, type: 3}
-  - {fileID: 919132149155446097, guid: 55eb22d2cafcbd6459446aac8d61eca4, type: 3}
-  Area: {x: 48, y: 0, z: 0}
-  AreaSize: {x: 30, y: 0, z: 50}
-  AreaRotation: {x: 0, y: 0, z: 0}
 --- !u!1001 &882483844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5170,9 +5170,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pollutionText: {fileID: 491847461}
-  collectable: {fileID: 6367074798890879593, guid: 3a57ad1b76e46ba4683c3cb44d91d420, type: 3}
-  Area: {x: 0.31, y: 0.66, z: -18}
-  AreaSize: {x: 13.63, y: 0, z: 5.64}
+  starterRoomCollectables: []
+  beachCollectables: []
+  starterRoomArea: {x: -0.4, y: 0, z: -17.91}
+  starterRoomAreaSize: {x: 15.68, y: 0, z: 7.8}
+  beachArea: {x: 48, y: 0, z: 3.1}
+  beachAreaSize: {x: 20, y: 0, z: 26.8}
 --- !u!4 &1832654066 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 990998cd14587f34f8d7ac972af916cd, type: 3}
