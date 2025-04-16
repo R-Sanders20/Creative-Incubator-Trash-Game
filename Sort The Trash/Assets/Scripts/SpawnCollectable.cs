@@ -26,11 +26,14 @@ public class SpawnCollectable : MonoBehaviour
         StartCoroutine(SpawnBeachCollectablesCoroutine());
     }
 
+    //controls the GUI Polloution text
     private void Update()
     {
         pollutionText.text = "Pollution : " + pollutionLevel.ToString() + " %"; 
     }
 
+
+    //Random Spawning calculation 
     public void SpawnCollectableFromArray(GameObject[] collectablesArray, Vector3 spawnArea, Vector3 spawnAreaSize)
     {
         float x = Random.Range(spawnArea.x - spawnAreaSize.x / 2, spawnArea.x + spawnAreaSize.x / 2);
@@ -40,10 +43,12 @@ public class SpawnCollectable : MonoBehaviour
 
         Instantiate(collectablesArray[Random.Range(0, collectablesArray.Length)], randomPosition, Quaternion.identity);
 
+        //updates pollution 
         pollutionLevel += 1;
-        pollutionText.text = "Pollution : " + pollutionLevel.ToString() + " %"; 
     }
 
+
+    //runs the spawn function with the starter room variables
     IEnumerator SpawnStarterRoomCollectablesCoroutine()
     {
         while (pollutionLevel < 100)
@@ -55,6 +60,7 @@ public class SpawnCollectable : MonoBehaviour
         Debug.Log("Pollution in Starter Room exceeded 100%");
     }
 
+    //runs the spawn function with the beach area variables
     IEnumerator SpawnBeachCollectablesCoroutine()
     {
         while (pollutionLevel < 100)
@@ -66,11 +72,14 @@ public class SpawnCollectable : MonoBehaviour
         Debug.Log("Pollution in Beach Area exceeded 100%");
     }
 
+    //Function for the other collectable script
     public void Deposited()
     {
         pollutionLevel -= 1; 
     }
 
+
+    //Gizmo so i can physically see the area's
     void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
