@@ -36,17 +36,25 @@ public class SpawnCollectable : MonoBehaviour
     //Random Spawning calculation 
     public void SpawnCollectableFromArray(GameObject[] collectablesArray, Vector3 spawnArea, Vector3 spawnAreaSize)
     {
-        float x = Random.Range(spawnArea.x - spawnAreaSize.x / 2, spawnArea.x + spawnAreaSize.x / 2);
-        float z = Random.Range(spawnArea.z - spawnAreaSize.z / 2, spawnArea.z + spawnAreaSize.z / 2);
-        float y = Random.Range(spawnArea.y - spawnAreaSize.y / 2, spawnArea.y + spawnAreaSize.y / 2);
-        Vector3 randomPosition = new Vector3(x, y, z);
+    //Random X and Z from the spawn area
+    float x = Random.Range(spawnArea.x - spawnAreaSize.x / 2, spawnArea.x + spawnAreaSize.x / 2);
+    float z = Random.Range(spawnArea.z - spawnAreaSize.z / 2, spawnArea.z + spawnAreaSize.z / 2);
+    
+    Vector3 randomPosition = new Vector3(x,spawnArea.y,z); //saves the random area with the new x and z and has a placeholder for the y axis 
 
-        Instantiate(collectablesArray[Random.Range(0, collectablesArray.Length)], randomPosition, Quaternion.identity);
-
-        //updates pollution 
-        pollutionLevel += 1;
+    // uses raycasthit to figure out the floor
+    RaycastHit Floor;
+    if (Physics.Raycast(randomPosition, Vector3.down, out Floor)) //takes the xyz of the random position and looks down to figure out where the floor is
+    {
+        randomPosition.y = Floor.point.y - 0.2f; // updates random position y with the new y level (lowered by 0.2f because it was still kind of floating)
     }
 
+    //picks a random collectable from the array and spawns it at the random position with no rotations applied
+    Instantiate(collectablesArray[Random.Range(0, collectablesArray.Length)], randomPosition, Quaternion.identity);
+
+    // Update pollution level
+    pollutionLevel += 1;
+}
 
     //runs the spawn function with the starter room variables
     IEnumerator SpawnStarterRoomCollectablesCoroutine()
@@ -79,13 +87,15 @@ public class SpawnCollectable : MonoBehaviour
     }
 
 
-    //Gizmo so i can physically see the area's
+    //visual zones for areas.
     void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(starterRoomArea, starterRoomAreaSize);
+{
+    //starter room area
+    Gizmos.color = Color.red;
+    Gizmos.DrawWireCube(starterRoomArea, starterRoomAreaSize);
 
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireCube(beachArea, beachAreaSize);
-    }
+    //beach area
+    Gizmos.color = Color.blue;
+    Gizmos.DrawWireCube(beachArea, beachAreaSize);
+}
 }
