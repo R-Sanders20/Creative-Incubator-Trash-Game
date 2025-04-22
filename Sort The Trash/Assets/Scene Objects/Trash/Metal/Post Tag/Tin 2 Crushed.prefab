@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6740298159765674847}
   - component: {fileID: 8822180306193592213}
   - component: {fileID: 4777173863512540441}
+  - component: {fileID: -7565946946472144696}
   m_Layer: 0
   m_Name: Tin 2 Crushed
   m_TagString: Blue Collectable
@@ -85,6 +86,20 @@ MeshRenderer:
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &4777173863512540441
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7020639369072610880}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -364044783463932134, guid: ac8d3c92ab85ebb4083faadc84a2b025, type: 3}
+--- !u!64 &-7565946946472144696
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 036893a53aa020243b756c89dbfae0d5, type: 3}
       propertyPath: m_Name
-      value: Napkin
+      value: Napkin Variant
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 036893a53aa020243b756c89dbfae0d5, type: 3}
       propertyPath: m_TagString
@@ -63,3 +63,22 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 036893a53aa020243b756c89dbfae0d5, type: 3}
+--- !u!1 &6214778349396153756 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 036893a53aa020243b756c89dbfae0d5, type: 3}
+  m_PrefabInstance: {fileID: 6556742062338140365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1489306152577592134
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6214778349396153756}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -336520244429124228, guid: 036893a53aa020243b756c89dbfae0d5, type: 3}

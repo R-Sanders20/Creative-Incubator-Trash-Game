@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5585336515732390925}
   - component: {fileID: 7667359390721093831}
   - component: {fileID: 5927492269874616907}
+  - component: {fileID: -5221569281402219882}
   m_Layer: 0
   m_Name: Broken Sharp Sheet Metal
   m_TagString: Blue Collectable
@@ -96,5 +97,19 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4068373912626513877, guid: 55801aa17a5dd9a41800000a3dfcbb32, type: 3}
+--- !u!64 &-5221569281402219882
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8171520725522321682}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4068373912626513877, guid: 55801aa17a5dd9a41800000a3dfcbb32, type: 3}

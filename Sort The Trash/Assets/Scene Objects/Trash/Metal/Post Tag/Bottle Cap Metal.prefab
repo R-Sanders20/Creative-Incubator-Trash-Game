@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9135816393516380477}
   - component: {fileID: 6425519370611131895}
   - component: {fileID: 6992198772424224635}
+  - component: {fileID: -4654151624509314012}
   m_Layer: 0
   m_Name: Bottle Cap Metal
   m_TagString: Blue Collectable
@@ -96,5 +97,19 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5076798556035486163, guid: 20f6fcdb2b7eda245b3080b9c1c3343d, type: 3}
+--- !u!64 &-4654151624509314012
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4768462782574404642}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5076798556035486163, guid: 20f6fcdb2b7eda245b3080b9c1c3343d, type: 3}

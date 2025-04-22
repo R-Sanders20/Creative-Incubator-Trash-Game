@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7689f08dfe0441844844e10893796980, type: 3}
       propertyPath: m_Name
-      value: Crisps Blue
+      value: Crisps Blue Variant
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7689f08dfe0441844844e10893796980, type: 3}
       propertyPath: m_TagString
@@ -63,3 +63,36 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7689f08dfe0441844844e10893796980, type: 3}
+--- !u!1 &7128643068401147583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7689f08dfe0441844844e10893796980, type: 3}
+  m_PrefabInstance: {fileID: 7939686473795953646}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &-8628152242192852791
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7128643068401147583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 9042771077998628582, guid: 7689f08dfe0441844844e10893796980, type: 3}
+--- !u!64 &7040553720302247587
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7128643068401147583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 9042771077998628582, guid: 7689f08dfe0441844844e10893796980, type: 3}

@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6376b588684365345b0d58f49c2d6889, type: 3}
       propertyPath: m_Name
-      value: Cup_Squashed_1
+      value: Cup_Squashed_1 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6376b588684365345b0d58f49c2d6889, type: 3}
       propertyPath: m_TagString
@@ -63,3 +63,36 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 6376b588684365345b0d58f49c2d6889, type: 3}
+--- !u!1 &8123748465151517145 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6376b588684365345b0d58f49c2d6889, type: 3}
+  m_PrefabInstance: {fileID: 8970101603066846344}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &-7540946345687182594
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8123748465151517145}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!64 &4594497696830768964
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8123748465151517145}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}

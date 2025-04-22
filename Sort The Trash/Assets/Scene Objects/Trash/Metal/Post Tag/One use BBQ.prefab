@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8761734393314524501}
   - component: {fileID: 6805810175438834079}
   - component: {fileID: 7374178359429489427}
+  - component: {fileID: 2261144353975369964}
   m_Layer: 0
   m_Name: One use BBQ
   m_TagString: Blue Collectable
@@ -86,6 +87,20 @@ MeshRenderer:
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &7374178359429489427
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5004594555365550154}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4068373912626513877, guid: 932170d749119d04c9424fe23c7d1510, type: 3}
+--- !u!64 &2261144353975369964
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
