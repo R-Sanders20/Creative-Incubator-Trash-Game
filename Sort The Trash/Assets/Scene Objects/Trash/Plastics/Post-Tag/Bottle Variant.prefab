@@ -26,15 +26,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 36.8969
+      value: -2.508251
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.39421874
+      value: 0.6347275
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.819696
+      value: -20.443525
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -68,11 +68,35 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -4993752052999552130, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4993752052999552130, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2563545736037429593, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2563545736037429593, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
       propertyPath: m_Name
       value: Bottle Variant
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
+      propertyPath: m_TagString
+      value: Blue Collectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507767883509144192, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
+      propertyPath: m_TagString
+      value: Blue Collectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 3779745573541866595, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
       propertyPath: m_TagString
       value: Blue Collectable
       objectReference: {fileID: 0}

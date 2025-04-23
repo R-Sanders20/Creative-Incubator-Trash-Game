@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 032aa32fa186bf1449eacabef30ce665, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 032aa32fa186bf1449eacabef30ce665, type: 3}
       propertyPath: m_LocalScale.x
@@ -26,15 +26,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 032aa32fa186bf1449eacabef30ce665, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.594223
+      value: -1.4828721
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 032aa32fa186bf1449eacabef30ce665, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.31322795
+      value: 0.63472754
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 032aa32fa186bf1449eacabef30ce665, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.291114
+      value: -21.901009
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 032aa32fa186bf1449eacabef30ce665, type: 3}
       propertyPath: m_LocalRotation.w
@@ -68,11 +68,23 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -3888937828008802678, guid: 032aa32fa186bf1449eacabef30ce665, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3888937828008802678, guid: 032aa32fa186bf1449eacabef30ce665, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 032aa32fa186bf1449eacabef30ce665, type: 3}
       propertyPath: m_Name
       value: Cup_Squashed_2_Varient Variant
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 032aa32fa186bf1449eacabef30ce665, type: 3}
+      propertyPath: m_TagString
+      value: Blue Collectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 8653909006750398859, guid: 032aa32fa186bf1449eacabef30ce665, type: 3}
       propertyPath: m_TagString
       value: Blue Collectable
       objectReference: {fileID: 0}

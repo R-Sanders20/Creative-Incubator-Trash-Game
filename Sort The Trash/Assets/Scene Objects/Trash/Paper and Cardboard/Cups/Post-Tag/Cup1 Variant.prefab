@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f9350f309da1806448d8434879321eee, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f9350f309da1806448d8434879321eee, type: 3}
       propertyPath: m_LocalScale.x
@@ -26,15 +26,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f9350f309da1806448d8434879321eee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.594223
+      value: -1.6829981
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f9350f309da1806448d8434879321eee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.31322795
+      value: 0.6347275
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f9350f309da1806448d8434879321eee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.291114
+      value: -21.40521
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f9350f309da1806448d8434879321eee, type: 3}
       propertyPath: m_LocalRotation.w
@@ -68,11 +68,27 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -8501284156531000229, guid: f9350f309da1806448d8434879321eee, type: 3}
+      propertyPath: m_TagString
+      value: Blue Collectable
+      objectReference: {fileID: 0}
+    - target: {fileID: -7917291961305824890, guid: f9350f309da1806448d8434879321eee, type: 3}
+      propertyPath: m_TagString
+      value: Blue Collectable
+      objectReference: {fileID: 0}
+    - target: {fileID: -4074821748958217102, guid: f9350f309da1806448d8434879321eee, type: 3}
+      propertyPath: m_TagString
+      value: Blue Collectable
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f9350f309da1806448d8434879321eee, type: 3}
       propertyPath: m_Name
       value: Cup1 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f9350f309da1806448d8434879321eee, type: 3}
+      propertyPath: m_TagString
+      value: Blue Collectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 4280778143602279253, guid: f9350f309da1806448d8434879321eee, type: 3}
       propertyPath: m_TagString
       value: Blue Collectable
       objectReference: {fileID: 0}
@@ -105,6 +121,82 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856003800035995164}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!1 &947185440087781142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8501284156531000229, guid: f9350f309da1806448d8434879321eee, type: 3}
+  m_PrefabInstance: {fileID: 513493071603340109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &6455710131777317749
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947185440087781142}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!1 &1513328028657455819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7917291961305824890, guid: f9350f309da1806448d8434879321eee, type: 3}
+  m_PrefabInstance: {fileID: 513493071603340109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &6896603711716146450
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513328028657455819}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!1 &4343768229938794520 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4280778143602279253, guid: f9350f309da1806448d8434879321eee, type: 3}
+  m_PrefabInstance: {fileID: 513493071603340109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5438445315001293539
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4343768229938794520}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!1 &4635074895100096319 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4074821748958217102, guid: f9350f309da1806448d8434879321eee, type: 3}
+  m_PrefabInstance: {fileID: 513493071603340109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5201617614084137050
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4635074895100096319}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1

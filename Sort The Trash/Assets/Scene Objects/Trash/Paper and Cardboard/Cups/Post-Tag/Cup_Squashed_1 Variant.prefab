@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 6376b588684365345b0d58f49c2d6889, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6376b588684365345b0d58f49c2d6889, type: 3}
       propertyPath: m_LocalScale.x
@@ -26,15 +26,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6376b588684365345b0d58f49c2d6889, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.594223
+      value: -1.4798431
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6376b588684365345b0d58f49c2d6889, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.31322795
+      value: 0.6347274
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6376b588684365345b0d58f49c2d6889, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.291114
+      value: -21.668621
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6376b588684365345b0d58f49c2d6889, type: 3}
       propertyPath: m_LocalRotation.w
@@ -70,9 +70,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6376b588684365345b0d58f49c2d6889, type: 3}
       propertyPath: m_Name
-      value: Cup_Squashed_1 Variant
+      value: Cup_Squashed_1 Variant (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6376b588684365345b0d58f49c2d6889, type: 3}
+      propertyPath: m_TagString
+      value: Blue Collectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946388452933186102, guid: 6376b588684365345b0d58f49c2d6889, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946388452933186102, guid: 6376b588684365345b0d58f49c2d6889, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7290139105190669015, guid: 6376b588684365345b0d58f49c2d6889, type: 3}
       propertyPath: m_TagString
       value: Blue Collectable
       objectReference: {fileID: 0}
