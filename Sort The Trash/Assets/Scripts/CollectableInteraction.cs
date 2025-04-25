@@ -4,55 +4,49 @@ using UnityEngine;
 
 public class CollectableInteraction : MonoBehaviour
 {
-    int blackCollectableStored = 0,blueCollectableStored = 0 ,greenCollectableStored = 0;
-    public SpawnCollectable spawnCollectableScript; // Reference to SpawnCollectable script
+    int blackCollectableStored = 0;
+    int blueCollectableStored = 0;
+    int greenCollectableStored = 0;
+
+    public SpawnCollectable spawnCollectableScript; // Links to SpawnCollectable script
     public bool collected;
 
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Entered Trigger with: " + other.tag);
-        
-        //Water
 
+        // Water
         if (other.CompareTag("Water"))
         {
-                transform.position = new Vector3(50.12734f, -0.841f, 1.243f);
+            transform.position = new Vector3(50.12734f, -0.841f, 1.243f);
         }
 
-        //Collectables
-
-        if (other.CompareTag("Black Collectable") && collected == false)
+        // Collectables
+        if (other.CompareTag("Black Collectable") && !collected)
         {
             blackCollectableStored++;
-            Debug.Log("Collectables:" + blackCollectableStored);
+            Debug.Log("Collectables: " + blackCollectableStored);
             Destroy(other.gameObject);
             collected = true;
         }
-        
-        
-        if (other.CompareTag("Blue Collectable") && collected == false)
+
+        if (other.CompareTag("Blue Collectable") && !collected)
         {
             blueCollectableStored++;
-            Debug.Log("Collectables:" + blueCollectableStored);
+            Debug.Log("Collectables: " + blueCollectableStored);
             Destroy(other.gameObject);
             collected = true;
         }
 
-
-
-
-        if (other.CompareTag("Green Collectable") && collected == false)
+        if (other.CompareTag("Green Collectable") && !collected)
         {
             greenCollectableStored++;
-            Debug.Log("Collectables:" + greenCollectableStored);
+            Debug.Log("Collectables: " + greenCollectableStored);
             Destroy(other.gameObject);
             collected = true;
         }
 
-        
-
-        //Bins 
-
+        // Bins
         if (other.CompareTag("Black Bin"))
         {
             if (blackCollectableStored > 0)
@@ -64,7 +58,7 @@ public class CollectableInteraction : MonoBehaviour
             }
             else
             {
-                Debug.Log("no trash");
+                Debug.Log("No trash");
             }
         }
 
@@ -79,13 +73,13 @@ public class CollectableInteraction : MonoBehaviour
             }
             else
             {
-                Debug.Log("no trash");
+                Debug.Log("No trash");
             }
         }
 
         if (other.CompareTag("Green Bin"))
         {
-            if (greenCollectableStored> 0)
+            if (greenCollectableStored > 0)
             {
                 greenCollectableStored--;
                 Debug.Log("Green Collectables now at: " + greenCollectableStored);
@@ -94,10 +88,8 @@ public class CollectableInteraction : MonoBehaviour
             }
             else
             {
-                Debug.Log("no trash");
+                Debug.Log("No trash");
             }
         }
-
-
     }
 }
