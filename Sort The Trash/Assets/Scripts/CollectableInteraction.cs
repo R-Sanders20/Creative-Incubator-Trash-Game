@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollectableInteraction : MonoBehaviour
 {
-    int blackCollectableStored,blueCollectableStored,greenCollectableStored  = 0;
+    int blackCollectableStored = 0,blueCollectableStored = 0 ,greenCollectableStored = 0;
     public SpawnCollectable spawnCollectableScript; // Reference to SpawnCollectable script
     public bool collected;
 
@@ -72,7 +72,7 @@ public class CollectableInteraction : MonoBehaviour
         {
             if (blueCollectableStored > 0)
             {
-                blackCollectableStored--;
+                blueCollectableStored--;
                 Debug.Log("Blue Collectables now at: " + blueCollectableStored);
                 spawnCollectableScript.Deposited();
                 collected = false;
