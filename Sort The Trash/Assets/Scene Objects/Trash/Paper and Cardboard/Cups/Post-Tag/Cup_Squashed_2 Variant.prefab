@@ -26,15 +26,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5bb8bc4ea8ee9c74b82c12025770967f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.016906
+      value: -5.561449
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5bb8bc4ea8ee9c74b82c12025770967f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6347275
+      value: -11.190001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5bb8bc4ea8ee9c74b82c12025770967f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.50541
+      value: -16.101686
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5bb8bc4ea8ee9c74b82c12025770967f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -74,7 +74,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3888937828008802678, guid: 5bb8bc4ea8ee9c74b82c12025770967f, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5bb8bc4ea8ee9c74b82c12025770967f, type: 3}
       propertyPath: m_Name
@@ -91,36 +91,3 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bb8bc4ea8ee9c74b82c12025770967f, type: 3}
---- !u!1 &5521604393086096603 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5bb8bc4ea8ee9c74b82c12025770967f, type: 3}
-  m_PrefabInstance: {fileID: 4639204738191010186}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &-6394436661258267785
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5521604393086096603}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
---- !u!64 &6832840541458535255
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5521604393086096603}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}

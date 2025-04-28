@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 80e95992761661b4291805485dd3d9dd, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80e95992761661b4291805485dd3d9dd, type: 3}
       propertyPath: m_LocalScale.x
@@ -26,15 +26,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80e95992761661b4291805485dd3d9dd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 36.94744
+      value: -4.23692
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80e95992761661b4291805485dd3d9dd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.36056173
+      value: -11.190001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80e95992761661b4291805485dd3d9dd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.209131
+      value: -21.806095
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80e95992761661b4291805485dd3d9dd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -76,7 +76,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Blue Collectable
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3451118302482216456, guid: 80e95992761661b4291805485dd3d9dd, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 80e95992761661b4291805485dd3d9dd, type: 3}
 --- !u!1 &953414413231110903 stripped
@@ -84,7 +85,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 80e95992761661b4291805485dd3d9dd, type: 3}
   m_PrefabInstance: {fileID: 142528087675733926}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &-4527396239066037579
+--- !u!64 &3323244508067443118
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

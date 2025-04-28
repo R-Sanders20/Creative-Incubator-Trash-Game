@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7608813550797275261}
   - component: {fileID: 1742656422820044036}
   - component: {fileID: 1168213337969647798}
-  - component: {fileID: 8738134758152952959}
   m_Layer: 0
   m_Name: pCube2
   m_TagString: Blue Collectable
@@ -84,20 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8738134758152952959
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631294122718228215}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5302568919011541938, guid: 5f46a3b7077245e47b8bdec9f569ee4c, type: 3}
 --- !u!1 &5191474942584325830
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,7 +94,6 @@ GameObject:
   - component: {fileID: 1390000938332607800}
   - component: {fileID: 8347648005572897070}
   - component: {fileID: 7646243019166214900}
-  - component: {fileID: 2179866999678822715}
   m_Layer: 0
   m_Name: pCube1
   m_TagString: Blue Collectable
@@ -182,20 +166,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2179866999678822715
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5191474942584325830}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4068373912626513877, guid: 5f46a3b7077245e47b8bdec9f569ee4c, type: 3}
 --- !u!1 &5553086476084076228
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,8 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5069740461861897342}
-  - component: {fileID: 5499002364323365558}
-  - component: {fileID: -2060601303543006705}
+  - component: {fileID: 3520980920137913083}
   m_Layer: 0
   m_Name: Kitchen Knife
   m_TagString: Blue Collectable
@@ -233,8 +202,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &5499002364323365558
-MeshCollider:
+--- !u!65 &3520980920137913083
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -243,24 +212,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
---- !u!64 &-2060601303543006705
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5553086476084076228}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.11412072, y: 0.5839386, z: 0.039170265}
+  m_Center: {x: 0.004716754, y: 0.3188548, z: 0.00065374374}
 --- !u!1 &6142141940143454485
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,7 +226,6 @@ GameObject:
   - component: {fileID: 694617752431008303}
   - component: {fileID: 1691562322668420458}
   - component: {fileID: 4308248554599091817}
-  - component: {fileID: 8891037624460697835}
   m_Layer: 0
   m_Name: pCylinder2
   m_TagString: Blue Collectable
@@ -345,20 +298,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8891037624460697835
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6142141940143454485}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6099800089077584851, guid: 5f46a3b7077245e47b8bdec9f569ee4c, type: 3}
 --- !u!1 &8477381955289616374
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,7 +309,6 @@ GameObject:
   - component: {fileID: 5325647008128107004}
   - component: {fileID: 6564531339370971052}
   - component: {fileID: 8119906278509808784}
-  - component: {fileID: 2143040348170808626}
   m_Layer: 0
   m_Name: pCylinder1
   m_TagString: Blue Collectable
@@ -443,17 +381,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2143040348170808626
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8477381955289616374}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5076798556035486163, guid: 5f46a3b7077245e47b8bdec9f569ee4c, type: 3}
