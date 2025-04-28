@@ -6062,9 +6062,9 @@ MonoBehaviour:
   - {fileID: 7128643068401147583, guid: edc1ae825e7ed3b428178bbddfb25120, type: 3}
   - {fileID: 4387891444355734509, guid: c7d9e21fa40e9b642bf8237b03522e49, type: 3}
   - {fileID: 821213633573801465, guid: 2b1d9fb07a745b849bfd39510cbd4904, type: 3}
-  starterRoomArea: {x: 0.18, y: 1, z: -18.2}
+  starterRoomAreaPos: {x: 0, y: 0, z: -18.1}
   starterRoomAreaSize: {x: 13.94, y: 0, z: 7.2}
-  beachArea: {x: 46.02, y: 0, z: 3.1}
+  beachAreaPos: {x: 44.63, y: 0, z: 0}
   beachAreaSize: {x: 16.3, y: 0, z: 24.3}
 --- !u!1 &1806931624 stripped
 GameObject:
