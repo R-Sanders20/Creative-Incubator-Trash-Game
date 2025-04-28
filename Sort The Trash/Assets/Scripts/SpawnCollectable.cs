@@ -10,6 +10,8 @@ public class SpawnCollectable : MonoBehaviour
     // Collectable Arrays
     public GameObject[] starterRoomCollectables;
     public GameObject[] beachCollectables;
+    public GameObject[] parkCollectables;
+
 
     // Collectable Spawn Area + Area Size
     public Vector3 starterRoomAreaPos;
@@ -17,6 +19,9 @@ public class SpawnCollectable : MonoBehaviour
 
     public Vector3 beachAreaPos;
     public Vector3 beachAreaSize;
+
+    public Vector3 parkAreaPos;
+    public Vector3 parkAreaSize;
 
     void Start()
     {
@@ -97,5 +102,9 @@ public class SpawnCollectable : MonoBehaviour
         // Beach area
         Gizmos.color = Color.blue;
         Gizmos.DrawWireCube(beachAreaPos, beachAreaSize);
+        
+        // Beach area
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireCube(parkAreaPos, parkAreaSize);
     }
 }

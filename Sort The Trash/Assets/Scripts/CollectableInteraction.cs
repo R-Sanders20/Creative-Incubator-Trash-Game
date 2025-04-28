@@ -7,6 +7,8 @@ public class CollectableInteraction : MonoBehaviour
     int blackCollectableStored = 0;
     int blueCollectableStored = 0;
     int greenCollectableStored = 0;
+    public bool starterArea = true;
+    public bool beachArea = false;
 
     public SpawnCollectable spawnCollectableScript; // Links to SpawnCollectable script
     public bool collected;
@@ -90,6 +92,34 @@ public class CollectableInteraction : MonoBehaviour
             {
                 Debug.Log("No trash");
             }
+        }
+
+         if (other.CompareTag("starterArea"))
+        {
+           starterArea = true;
+           Debug.Log("Starter Area: " + starterArea);
+        }
+            
+        if (other.CompareTag("beachArea"))
+        {
+           beachArea = true;
+           Debug.Log("beach Area: " + beachArea);
+
+        }
+    }
+        void OnTriggerExit(Collider other){
+               
+        if (other.CompareTag("starterArea"))
+        {
+           starterArea = false;
+           Debug.Log("Starter Area: " + starterArea);
+
+        }
+            
+        if (other.CompareTag("beachArea"))
+        {
+           beachArea = false;
+           Debug.Log("beach Area: " + beachArea);
         }
     }
 }
