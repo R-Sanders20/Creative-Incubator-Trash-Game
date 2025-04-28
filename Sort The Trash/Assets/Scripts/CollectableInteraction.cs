@@ -7,9 +7,8 @@ public class CollectableInteraction : MonoBehaviour
     int blackCollectableStored = 0;
     int blueCollectableStored = 0;
     int greenCollectableStored = 0;
-    public bool starterArea = true;
-    public bool beachArea = false;
-
+    public static bool starterArea = true;
+    public static bool beachArea = false;
     public SpawnCollectable spawnCollectableScript; // Links to SpawnCollectable script
     public bool collected;
 

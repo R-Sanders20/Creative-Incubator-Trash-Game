@@ -23,6 +23,10 @@ public class SpawnCollectable : MonoBehaviour
     public Vector3 parkAreaPos;
     public Vector3 parkAreaSize;
 
+    
+    public CollectableInteraction CollectableInteractionScript; // Links to SpawnCollectable script
+
+
     void Start()
     {
         // Starts the spawning of the 2 collectable areas
@@ -63,7 +67,8 @@ public class SpawnCollectable : MonoBehaviour
     // Runs the spawn function with the starter room variables
     IEnumerator SpawnStarterRoomCollectablesCoroutine()
     {
-        while (pollutionLevel < 100)
+    
+    while (pollutionLevel < 100 && CollectableInteraction.starterArea == true)
         {
             SpawnCollectableFromArray(starterRoomCollectables, starterRoomAreaPos, starterRoomAreaSize);
             Debug.Log("Spawned collectable in Starter Room at timestamp : " + Time.time);
@@ -76,7 +81,7 @@ public class SpawnCollectable : MonoBehaviour
     // Runs the spawn function with the beach area variables
     IEnumerator SpawnBeachCollectablesCoroutine()
     {
-        while (pollutionLevel < 100)
+        while (pollutionLevel < 100 && CollectableInteraction.beachArea == true)
         {
             SpawnCollectableFromArray(beachCollectables, beachAreaPos, beachAreaSize);
             Debug.Log("Spawned collectable in Beach Area at timestamp : " + Time.time);
@@ -106,5 +111,6 @@ public class SpawnCollectable : MonoBehaviour
         // Beach area
         Gizmos.color = Color.white;
         Gizmos.DrawWireCube(parkAreaPos, parkAreaSize);
-    }
-}
+    }}
+
+
