@@ -26,15 +26,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.2629755
+      value: -8.447203
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.190001
+      value: 0.515
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.816082
+      value: -28.016453
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -76,6 +76,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -4003092854873392710, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.294
+      objectReference: {fileID: 0}
     - target: {fileID: -2563545736037429593, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -83,6 +87,10 @@ PrefabInstance:
     - target: {fileID: -2563545736037429593, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 592664080621265513, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ccb0216e675b8214eb347d27a14664b3, type: 3}
       propertyPath: m_Name
@@ -121,5 +129,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.18968284, y: 0.49514198, z: 0.14066029}
-  m_Center: {x: 0.0044341683, y: 0.51197386, z: 0.0025696754}
+  m_Size: {x: 0.18968284, y: 0.52955747, z: 0.14066029}
+  m_Center: {x: 0.0044341683, y: 0.06987834, z: 0.0025696754}
