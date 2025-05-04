@@ -1,12 +1,16 @@
 using TMPro;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class SpawnCollectable : MonoBehaviour
 {
     //UI Stuff
-    public TextMeshProUGUI pollutionText; 
+    public TextMeshProUGUI pollutionText;
+    public TextMeshProUGUI scoreText;
+
     private int pollutionLevel = 0;
+    public int score = 0;
 
     // Collectable Arrays
     public GameObject[] starterRoomCollectables;
@@ -62,6 +66,7 @@ public class SpawnCollectable : MonoBehaviour
 
         // Update GUI Pollution text
         pollutionText.text = "Pollution : " + pollutionLevel.ToString() + " %";
+        scoreText.text = "Score : " + score;
     }
 
     // Random Spawning calculation
@@ -115,6 +120,7 @@ public class SpawnCollectable : MonoBehaviour
     public void Deposited()
     {
         pollutionLevel -= 1;
+        score++;
     }
 
     // Visual zones for areas
