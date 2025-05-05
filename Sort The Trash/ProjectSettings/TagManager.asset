@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Black Collectable
   - Black Bin
+  - beachArea
+  - Water
+  - starterArea
+  - Blue Bin
+  - Blue Collectable
+  - Green Bin
   layers:
   - Default
   - TransparentFX
@@ -13,7 +19,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - UIObjectPreview
   - 
   - 
   - 

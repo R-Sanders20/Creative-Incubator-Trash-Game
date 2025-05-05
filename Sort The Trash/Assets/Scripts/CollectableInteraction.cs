@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class CollectableInteraction : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class CollectableInteraction : MonoBehaviour
     public static bool beachArea = false;
     public SpawnCollectable spawnCollectableScript; // Links to SpawnCollectable script
     public bool collected;
+    public GameObject currentObject;
+    public Transform PreviewAnchor;
+    public int targetLayer = 6;
 
     void OnTriggerEnter(Collider other)
     {
@@ -25,26 +29,49 @@ public class CollectableInteraction : MonoBehaviour
         // Collectables
         if (other.CompareTag("Black Collectable") && !collected)
         {
-            blackCollectableStored++;
-            Debug.Log("Collectables: " + blackCollectableStored);
-            Destroy(other.gameObject);
             collected = true;
+            GameObject prefabToSpawn = other.gameObject;
+
+            blackCollectableStored++;
+
+            GameObject clone = Instantiate(prefabToSpawn, PreviewAnchor.position, Quaternion.identity);
+            SetLayerRecursively(clone, targetLayer);
+
+            Destroy(other.gameObject);
+            currentObject = clone;
+            Debug.Log("Collectables: " + blackCollectableStored + "Type: " + currentObject.name);
         }
 
         if (other.CompareTag("Blue Collectable") && !collected)
         {
-            blueCollectableStored++;
-            Debug.Log("Collectables: " + blueCollectableStored);
-            Destroy(other.gameObject);
             collected = true;
+            GameObject prefabToSpawn = other.gameObject;
+
+            blueCollectableStored++;
+
+            GameObject clone = Instantiate(prefabToSpawn, PreviewAnchor.position, Quaternion.identity);
+            SetLayerRecursively(clone, targetLayer);
+
+            Destroy(other.gameObject);
+
+            currentObject = clone;
+            Debug.Log("Collectables: " + blueCollectableStored + "Type: " + currentObject.name);
         }
 
         if (other.CompareTag("Green Collectable") && !collected)
         {
-            greenCollectableStored++;
-            Debug.Log("Collectables: " + greenCollectableStored);
-            Destroy(other.gameObject);
             collected = true;
+            GameObject prefabToSpawn = other.gameObject;
+
+            greenCollectableStored++;
+            GameObject clone = Instantiate(prefabToSpawn, PreviewAnchor.position, Quaternion.identity);
+            SetLayerRecursively(clone, targetLayer);
+
+            Destroy(other.gameObject);
+
+            currentObject = clone;
+            Debug.Log("Collectables: " + greenCollectableStored + "Type: " + currentObject.name);
+
         }
 
         // Bins
@@ -52,10 +79,13 @@ public class CollectableInteraction : MonoBehaviour
         {
             if (blackCollectableStored > 0)
             {
+                GameObject toDestroy = currentObject;
+                currentObject = null;
+                Destroy(toDestroy);
+                collected = false;
                 blackCollectableStored--;
                 Debug.Log("Black Collectables now at: " + blackCollectableStored);
                 spawnCollectableScript.Deposited();
-                collected = false;
             }
             else
             {
@@ -67,10 +97,13 @@ public class CollectableInteraction : MonoBehaviour
         {
             if (blueCollectableStored > 0)
             {
+                GameObject toDestroy = currentObject;
+                currentObject = null;
+                Destroy(toDestroy);
+                collected = false;
                 blueCollectableStored--;
                 Debug.Log("Blue Collectables now at: " + blueCollectableStored);
                 spawnCollectableScript.Deposited();
-                collected = false;
             }
             else
             {
@@ -82,10 +115,13 @@ public class CollectableInteraction : MonoBehaviour
         {
             if (greenCollectableStored > 0)
             {
+                GameObject toDestroy = currentObject;
+                currentObject = null;
+                Destroy(toDestroy);
+                collected = false;
                 greenCollectableStored--;
                 Debug.Log("Green Collectables now at: " + greenCollectableStored);
                 spawnCollectableScript.Deposited();
-                collected = false;
             }
             else
             {
@@ -93,32 +129,42 @@ public class CollectableInteraction : MonoBehaviour
             }
         }
 
-         if (other.CompareTag("starterArea"))
+        if (other.CompareTag("starterArea"))
         {
-           starterArea = true;
-           Debug.Log("Starter Area: " + starterArea);
+            starterArea = true;
+            Debug.Log("Starter Area: " + starterArea);
         }
-            
+
         if (other.CompareTag("beachArea"))
         {
-           beachArea = true;
-           Debug.Log("beach Area: " + beachArea);
+            beachArea = true;
+            Debug.Log("beach Area: " + beachArea);
 
         }
     }
-        void OnTriggerExit(Collider other){
-               
+    void OnTriggerExit(Collider other)
+    {
+
         if (other.CompareTag("starterArea"))
         {
-           starterArea = false;
-           Debug.Log("Starter Area: " + starterArea);
+            starterArea = false;
+            Debug.Log("Starter Area: " + starterArea);
 
         }
-            
+
         if (other.CompareTag("beachArea"))
         {
-           beachArea = false;
-           Debug.Log("beach Area: " + beachArea);
+            beachArea = false;
+            Debug.Log("beach Area: " + beachArea);
+        }
+    }
+
+    void SetLayerRecursively(GameObject obj, int layer)
+    {
+        obj.layer = layer;
+        foreach (Transform child in obj.transform)
+        {
+            SetLayerRecursively(child.gameObject, layer);
         }
     }
 }
