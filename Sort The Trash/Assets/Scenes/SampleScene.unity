@@ -10399,8 +10399,8 @@ MonoBehaviour:
   starterRoomAreaSize: {x: 13.94, y: 0, z: 7.2}
   beachAreaPos: {x: 44.63, y: 1.35, z: 0}
   beachAreaSize: {x: 16.3, y: 0, z: 24.3}
-  parkAreaPos: {x: -10.85, y: 0.59, z: 23.48}
-  parkAreaSize: {x: 27.48, y: 0, z: 21.04}
+  parkAreaPos: {x: -9.4, y: 0.59, z: 24.72}
+  parkAreaSize: {x: 31.84, y: 0, z: 22.9}
   CollectableInteraction: {fileID: 0}
 --- !u!1 &1806931624 stripped
 GameObject:
