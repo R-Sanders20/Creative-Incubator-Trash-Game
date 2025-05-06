@@ -76,7 +76,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Black Collectable
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3451118302482216456, guid: 7689f08dfe0441844844e10893796980, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7689f08dfe0441844844e10893796980, type: 3}
 --- !u!1 &7128643068401147583 stripped
