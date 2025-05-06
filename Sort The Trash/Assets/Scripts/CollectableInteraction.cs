@@ -39,6 +39,7 @@ public class CollectableInteraction : MonoBehaviour
 
             Destroy(other.gameObject);
             currentObject = clone;
+
             Debug.Log("Collectables: " + blackCollectableStored + "Type: " + currentObject.name);
         }
 
@@ -55,6 +56,7 @@ public class CollectableInteraction : MonoBehaviour
             Destroy(other.gameObject);
 
             currentObject = clone;
+
             Debug.Log("Collectables: " + blueCollectableStored + "Type: " + currentObject.name);
         }
 
@@ -70,6 +72,7 @@ public class CollectableInteraction : MonoBehaviour
             Destroy(other.gameObject);
 
             currentObject = clone;
+
             Debug.Log("Collectables: " + greenCollectableStored + "Type: " + currentObject.name);
 
         }
@@ -83,6 +86,7 @@ public class CollectableInteraction : MonoBehaviour
                 currentObject = null;
                 Destroy(toDestroy);
                 collected = false;
+
                 blackCollectableStored--;
                 Debug.Log("Black Collectables now at: " + blackCollectableStored);
                 spawnCollectableScript.Deposited();
@@ -101,6 +105,7 @@ public class CollectableInteraction : MonoBehaviour
                 currentObject = null;
                 Destroy(toDestroy);
                 collected = false;
+
                 blueCollectableStored--;
                 Debug.Log("Blue Collectables now at: " + blueCollectableStored);
                 spawnCollectableScript.Deposited();
@@ -118,6 +123,7 @@ public class CollectableInteraction : MonoBehaviour
                 GameObject toDestroy = currentObject;
                 currentObject = null;
                 Destroy(toDestroy);
+
                 collected = false;
                 greenCollectableStored--;
                 Debug.Log("Green Collectables now at: " + greenCollectableStored);
