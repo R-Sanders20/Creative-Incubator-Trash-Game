@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.SceneManagement;
 
 public class SpawnCollectable : MonoBehaviour
 {
@@ -101,6 +102,7 @@ public class SpawnCollectable : MonoBehaviour
         }
         Debug.Log("Pollution in Starter Room exceeded 100%");
         starterRoomCoroutine = null; // Reset reference when coroutine ends
+        SceneManager.LoadSceneAsync(2);
     }
 
     // Beach Collectables Coroutine
@@ -114,6 +116,7 @@ public class SpawnCollectable : MonoBehaviour
         }
         Debug.Log("Pollution in Beach Area exceeded 100%");
         beachCoroutine = null; // Reset reference when coroutine ends
+        SceneManager.LoadSceneAsync(2);
     }
 
     // Function for the other collectable script
