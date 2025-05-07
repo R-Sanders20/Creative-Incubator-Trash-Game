@@ -12,6 +12,7 @@ public class SpawnCollectable : MonoBehaviour
 
     private int pollutionLevel = 0;
     public int score = 0;
+    public int ScoreFinal;
 
     // Collectable Arrays
     public GameObject[] starterRoomCollectables;
@@ -36,6 +37,7 @@ public class SpawnCollectable : MonoBehaviour
     private Coroutine starterRoomCoroutine = null;
     private Coroutine beachCoroutine = null;
     private Coroutine parkCoroutine = null;
+
 
     void Update()
     {
@@ -68,6 +70,7 @@ public class SpawnCollectable : MonoBehaviour
         // Update GUI Pollution text
         pollutionText.text = "Pollution : " + pollutionLevel.ToString() + " %";
         scoreText.text = "Score : " + score;
+        ScoreFinal = score;
     }
 
     // Random Spawning calculation
