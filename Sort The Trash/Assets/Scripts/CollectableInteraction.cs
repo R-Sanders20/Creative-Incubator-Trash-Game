@@ -36,7 +36,7 @@ public class CollectableInteraction : MonoBehaviour
             blackCollectableStored++;
 
             GameObject clone = Instantiate(prefabToSpawn, PreviewAnchor.position, Quaternion.identity);
-            SetLayerRecursively(clone, targetLayer);
+            objectScale(clone, 1f, targetLayer);
 
             Destroy(other.gameObject);
             currentObject = clone;
@@ -53,7 +53,7 @@ public class CollectableInteraction : MonoBehaviour
             blueCollectableStored++;
 
             GameObject clone = Instantiate(prefabToSpawn, PreviewAnchor.position, Quaternion.identity);
-            SetLayerRecursively(clone, targetLayer);
+            objectScale(clone, 1f, targetLayer);
 
             Destroy(other.gameObject);
 
@@ -70,7 +70,7 @@ public class CollectableInteraction : MonoBehaviour
 
             greenCollectableStored++;
             GameObject clone = Instantiate(prefabToSpawn, PreviewAnchor.position, Quaternion.identity);
-            SetLayerRecursively(clone, targetLayer);
+            objectScale(clone, 1f, targetLayer);
 
             Destroy(other.gameObject);
 
@@ -178,6 +178,38 @@ public class CollectableInteraction : MonoBehaviour
         foreach (Transform child in obj.transform)
         {
             SetLayerRecursively(child.gameObject, layer);
+        }
+    }
+
+    void objectScale(GameObject obj, float targetSize, int layer)
+    {
+        obj.transform.SetParent(PreviewAnchor, false);
+        obj.transform.localPosition = Vector3.zero;
+        obj.transform.localRotation = Quaternion.identity;
+
+        Renderer[] renderers = obj.GetComponentsInChildren<Renderer>();
+        if (renderers.Length == 0) return;
+
+        Bounds combinedBounds = renderers[0].bounds;
+        foreach (Renderer r in renderers)
+        {
+            combinedBounds.Encapsulate(r.bounds);
+        }
+
+        float maxDimension = Mathf.Max(combinedBounds.size.x, combinedBounds.size.y, combinedBounds.size.z);
+        if (maxDimension == 0) return;
+
+        float scaleFactor = targetSize / maxDimension;
+        obj.transform.localScale *= scaleFactor;
+
+        SetLayerRecursively(obj, layer);
+    }
+
+    private void Update()
+    {
+        if (currentObject != null)
+        {
+            PreviewAnchor.Rotate(0f, 15f * Time.deltaTime, 15f * Time.deltaTime);
         }
     }
 }
