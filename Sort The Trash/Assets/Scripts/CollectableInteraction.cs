@@ -15,6 +15,7 @@ public class CollectableInteraction : MonoBehaviour
     public GameObject currentObject;
     public Transform PreviewAnchor;
     public int targetLayer = 6;
+    public AudioSource pickUp, binObject;
 
     void OnTriggerEnter(Collider other)
     {
@@ -41,6 +42,7 @@ public class CollectableInteraction : MonoBehaviour
             currentObject = clone;
 
             Debug.Log("Collectables: " + blackCollectableStored + "Type: " + currentObject.name);
+            pickUp.Play();
         }
 
         if (other.CompareTag("Blue Collectable") && !collected)
@@ -58,6 +60,7 @@ public class CollectableInteraction : MonoBehaviour
             currentObject = clone;
 
             Debug.Log("Collectables: " + blueCollectableStored + "Type: " + currentObject.name);
+            pickUp.Play();
         }
 
         if (other.CompareTag("Green Collectable") && !collected)
@@ -74,6 +77,7 @@ public class CollectableInteraction : MonoBehaviour
             currentObject = clone;
 
             Debug.Log("Collectables: " + greenCollectableStored + "Type: " + currentObject.name);
+            pickUp.Play();
 
         }
 
@@ -90,6 +94,7 @@ public class CollectableInteraction : MonoBehaviour
                 blackCollectableStored--;
                 Debug.Log("Black Collectables now at: " + blackCollectableStored);
                 spawnCollectableScript.Deposited();
+                binObject.Play();
             }
             else
             {
@@ -109,6 +114,7 @@ public class CollectableInteraction : MonoBehaviour
                 blueCollectableStored--;
                 Debug.Log("Blue Collectables now at: " + blueCollectableStored);
                 spawnCollectableScript.Deposited();
+                binObject.Play();
             }
             else
             {
@@ -128,6 +134,7 @@ public class CollectableInteraction : MonoBehaviour
                 greenCollectableStored--;
                 Debug.Log("Green Collectables now at: " + greenCollectableStored);
                 spawnCollectableScript.Deposited();
+                binObject.Play();
             }
             else
             {

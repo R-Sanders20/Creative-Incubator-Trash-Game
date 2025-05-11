@@ -38,6 +38,8 @@ public class SpawnCollectable : MonoBehaviour
     private Coroutine beachCoroutine = null;
     private Coroutine parkCoroutine = null;
 
+    public AudioSource spawnSound;
+
 
     void Update()
     {
@@ -102,6 +104,7 @@ public class SpawnCollectable : MonoBehaviour
             SpawnCollectableFromArray(starterRoomCollectables, starterRoomAreaPos, starterRoomAreaSize);
             Debug.Log("Spawned collectable in Starter Room at timestamp: " + Time.time);
             yield return new WaitForSeconds(3);
+            spawnSound.Play();
         }
         Debug.Log("Pollution in Starter Room exceeded 100%");
         starterRoomCoroutine = null; // Reset reference when coroutine ends
@@ -116,6 +119,7 @@ public class SpawnCollectable : MonoBehaviour
             SpawnCollectableFromArray(beachCollectables, beachAreaPos, beachAreaSize);
             Debug.Log("Spawned collectable in Beach Area at timestamp: " + Time.time);
             yield return new WaitForSeconds(5);
+            spawnSound.Play();
         }
         Debug.Log("Pollution in Beach Area exceeded 100%");
         beachCoroutine = null; // Reset reference when coroutine ends
