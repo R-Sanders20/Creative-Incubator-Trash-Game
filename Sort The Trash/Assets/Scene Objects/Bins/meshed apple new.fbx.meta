@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 284b894d43bf24e4c8bd3e3ee54559a3
+guid: 68834772f3b21ce4f987d7227acc4019
 ModelImporter:
   serializedVersion: 22102
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Apple_mesh_lines
+    second: {fileID: 2100000, guid: 6cd94d9f20834cc44ae2860a3b7a4e2d, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Apple mesh new
+    second: {fileID: 2800000, guid: 65f6fe656de7fbe49a7f53fce0170dd0, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -35,7 +45,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 100
+    globalScale: 15
     meshCompression: 0
     addColliders: 1
     useSRGBMaterialColor: 1
@@ -89,7 +99,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.14999999
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
