@@ -1,6 +1,10 @@
+using Newtonsoft.Json.Linq;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using static UnityEditor.Progress;
 
 public class CollectableInteraction : MonoBehaviour
@@ -16,9 +20,11 @@ public class CollectableInteraction : MonoBehaviour
     public Transform PreviewAnchor;
     public int targetLayer = 6;
     public AudioSource pickUp, binObject;
+    public TextMeshProUGUI objectName;
 
     void OnTriggerEnter(Collider other)
     {
+
         Debug.Log("Entered Trigger with: " + other.tag);
 
         // Water
@@ -43,6 +49,7 @@ public class CollectableInteraction : MonoBehaviour
 
             Debug.Log("Collectables: " + blackCollectableStored + "Type: " + currentObject.name);
             pickUp.Play();
+            objectName.text = CleanObjectName(currentObject.name);
         }
 
         if (other.CompareTag("Blue Collectable") && !collected)
@@ -61,6 +68,7 @@ public class CollectableInteraction : MonoBehaviour
 
             Debug.Log("Collectables: " + blueCollectableStored + "Type: " + currentObject.name);
             pickUp.Play();
+            objectName.text = CleanObjectName(currentObject.name);
         }
 
         if (other.CompareTag("Green Collectable") && !collected)
@@ -78,6 +86,7 @@ public class CollectableInteraction : MonoBehaviour
 
             Debug.Log("Collectables: " + greenCollectableStored + "Type: " + currentObject.name);
             pickUp.Play();
+            objectName.text = CleanObjectName(currentObject.name);
 
         }
 
@@ -88,6 +97,7 @@ public class CollectableInteraction : MonoBehaviour
             {
                 GameObject toDestroy = currentObject;
                 currentObject = null;
+                objectName.text = "";
                 Destroy(toDestroy);
                 collected = false;
 
@@ -108,6 +118,7 @@ public class CollectableInteraction : MonoBehaviour
             {
                 GameObject toDestroy = currentObject;
                 currentObject = null;
+                objectName.text = "";
                 Destroy(toDestroy);
                 collected = false;
 
@@ -128,6 +139,7 @@ public class CollectableInteraction : MonoBehaviour
             {
                 GameObject toDestroy = currentObject;
                 currentObject = null;
+                objectName.text = "";
                 Destroy(toDestroy);
 
                 collected = false;
@@ -211,5 +223,17 @@ public class CollectableInteraction : MonoBehaviour
         {
             PreviewAnchor.Rotate(0f, 15f * Time.deltaTime, 15f * Time.deltaTime);
         }
+    }
+
+    string CleanObjectName(string name)
+    {
+        string[] stringsToRemove = { "Variant", "(Clone)", "Red", "Blue", "Green", "2", "Squashed" };
+
+        foreach (string str in stringsToRemove)
+        {
+            name = name.Replace(str, "");
+        }
+
+        return name.Trim();
     }
 }
