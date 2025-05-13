@@ -13185,6 +13185,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3451118302482216456, guid: e4353c2625e1dc64a92659300a4301ea, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: e4353c2625e1dc64a92659300a4301ea, type: 3}
@@ -15394,7 +15398,7 @@ MonoBehaviour:
   - {fileID: 6106994564406975934, guid: 95b2f90af4fbe7042b04d80480ea99ee, type: 3}
   - {fileID: 3705971602152696201, guid: d092b74d99032494c983204ddbfe144f, type: 3}
   - {fileID: 4768462782574404642, guid: 644f10ee2d28e5a4ba640d21128169e0, type: 3}
-  - {fileID: 8171520725522321682, guid: 26c01ab1bae609e44ab9117c736cc669, type: 3}
+  - {fileID: 4746065015807702082, guid: aefe0423c0bc93a4b9d773a22dcfa0b2, type: 3}
   - {fileID: 5553086476084076228, guid: b8c178d61c052444f98bf58b1b690de0, type: 3}
   - {fileID: 9160052074452142443, guid: 8dc75c69b2df32447a7db614e74dd71b, type: 3}
   - {fileID: 5004594555365550154, guid: 213509b8fe22b3446ad9b7e305917ca8, type: 3}
