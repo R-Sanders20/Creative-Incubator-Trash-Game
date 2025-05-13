@@ -10,7 +10,7 @@ public class SpawnCollectable : MonoBehaviour
     public TextMeshProUGUI pollutionText;
     public TextMeshProUGUI scoreText;
 
-    private int pollutionLevel = 0;
+    private double pollutionLevel = 0;
     public int score = 0;
     public int ScoreFinal;
 
@@ -114,7 +114,7 @@ public class SpawnCollectable : MonoBehaviour
         Instantiate(collectablesArray[Random.Range(0, collectablesArray.Length)], randomPosition, Quaternion.identity);
 
         // Update pollution level
-        pollutionLevel += 5;
+        pollutionLevel += 2.5;
     }
 
     // Starter Room Collectables Coroutine
