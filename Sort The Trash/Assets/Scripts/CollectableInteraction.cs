@@ -59,6 +59,7 @@ public class CollectableInteraction : MonoBehaviour
             Destroy(other.gameObject);
 
             currentObject = clone;
+            Destroy(clone.GetComponent<Rigidbody>());
 
             Debug.Log("Collectables: " + blueCollectableStored + "Type: " + currentObject.name);
             pickUp.Play();
@@ -76,6 +77,7 @@ public class CollectableInteraction : MonoBehaviour
             Destroy(other.gameObject);
 
             currentObject = clone;
+            Destroy(clone.GetComponent<Rigidbody>());
 
             Debug.Log("Collectables: " + greenCollectableStored + "Type: " + currentObject.name);
             pickUp.Play();
