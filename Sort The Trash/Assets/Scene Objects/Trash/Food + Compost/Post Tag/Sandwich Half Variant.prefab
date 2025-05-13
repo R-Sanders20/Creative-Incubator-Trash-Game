@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 6aa88431b088dbb4581f5898c2eae6a5, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6aa88431b088dbb4581f5898c2eae6a5, type: 3}
       propertyPath: m_LocalScale.x
@@ -118,7 +118,7 @@ MeshCollider:
   m_GameObject: {fileID: 4439670400317177859}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
