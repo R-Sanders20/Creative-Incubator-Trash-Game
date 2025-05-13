@@ -84,10 +84,10 @@ public class SpawnCollectable : MonoBehaviour
         Vector3 randomPosition = new Vector3(x, spawnArea.y + 0.12f, z); // Placeholder for the y-axis
 
         // Uses raycast hit to determine floor
-        if (Physics.Raycast(randomPosition, Vector3.down, out RaycastHit floor))
-        {
-            randomPosition.y = floor.point.y;
-        }
+       // if (Physics.Raycast(randomPosition, Vector3.down, out RaycastHit floor))
+       // {
+        //    randomPosition.y = floor.point.y;
+        //}
 
         // Pick a random collectable from the array and spawn it
         Instantiate(collectablesArray[Random.Range(0, collectablesArray.Length)], randomPosition, Quaternion.identity);

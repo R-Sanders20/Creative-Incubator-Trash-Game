@@ -40,6 +40,7 @@ public class CollectableInteraction : MonoBehaviour
 
             Destroy(other.gameObject);
             currentObject = clone;
+            Destroy(clone.GetComponent<Rigidbody>());
 
             Debug.Log("Collectables: " + blackCollectableStored + "Type: " + currentObject.name);
             pickUp.Play();
