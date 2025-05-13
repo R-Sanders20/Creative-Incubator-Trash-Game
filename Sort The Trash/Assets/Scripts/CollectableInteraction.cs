@@ -230,7 +230,7 @@ public class CollectableInteraction : MonoBehaviour
 
     string CleanObjectName(string name)
     {
-        string[] stringsToRemove = { "Variant", "(Clone)", "Red", "Blue", "Green", "2", "Squashed" };
+        string[] stringsToRemove = { "Variant", "(Clone)", "Red", "Blue", "Green", "2", "1", "Squashed" };
 
         foreach (string str in stringsToRemove)
         {
