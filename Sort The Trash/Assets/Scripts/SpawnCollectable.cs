@@ -40,6 +40,16 @@ public class SpawnCollectable : MonoBehaviour
 
     public AudioSource spawnSound;
 
+    public GameObject beachPop;
+    public GameObject parkPop;
+    private bool hasShownParkPopup = false;
+    private bool hasShownBeachPopup = false;
+
+    void Start()
+    {
+        beachPop.SetActive(false);
+        parkPop.SetActive(false);
+    }
 
     void Update()
     {
@@ -93,7 +103,7 @@ public class SpawnCollectable : MonoBehaviour
         Instantiate(collectablesArray[Random.Range(0, collectablesArray.Length)], randomPosition, Quaternion.identity);
 
         // Update pollution level
-        pollutionLevel += 1;
+        pollutionLevel += 5;
     }
 
     // Starter Room Collectables Coroutine
@@ -101,6 +111,13 @@ public class SpawnCollectable : MonoBehaviour
     {
         while (pollutionLevel < 100)
         {
+            if (pollutionLevel >= 25 && !hasShownBeachPopup)
+            {
+                beachPop.SetActive(true);
+                hasShownBeachPopup = true;
+                Debug.Log("Park popup shown");
+            }
+
             SpawnCollectableFromArray(starterRoomCollectables, starterRoomAreaPos, starterRoomAreaSize);
             Debug.Log("Spawned collectable in Starter Room at timestamp: " + Time.time);
             yield return new WaitForSeconds(3);
@@ -114,11 +131,18 @@ public class SpawnCollectable : MonoBehaviour
     // Beach Collectables Coroutine
     IEnumerator SpawnBeachCollectablesCoroutine()
     {
+        beachPop.SetActive(false);
         while (pollutionLevel < 100)
         {
+            if (pollutionLevel >= 75 && !hasShownParkPopup)
+            {
+                parkPop.SetActive(true);
+                hasShownParkPopup = true;
+                Debug.Log("Park popup shown");
+            }
             SpawnCollectableFromArray(beachCollectables, beachAreaPos, beachAreaSize);
             Debug.Log("Spawned collectable in Beach Area at timestamp: " + Time.time);
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(2);
             spawnSound.Play();
         }
         Debug.Log("Pollution in Beach Area exceeded 100%");
@@ -129,10 +153,11 @@ public class SpawnCollectable : MonoBehaviour
     // Function for the other collectable script
     public void Deposited()
     {
-        pollutionLevel -= 1;
+        pollutionLevel -= 5;
         score++;
     }
 
+    
     // Visual zones for areas
     void OnDrawGizmos()
     {
