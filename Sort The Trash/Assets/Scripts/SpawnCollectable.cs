@@ -111,7 +111,7 @@ public class SpawnCollectable : MonoBehaviour
     {
         while (pollutionLevel < 100)
         {
-            if (pollutionLevel >= 25 && !hasShownBeachPopup)
+            if (pollutionLevel >= 20 && !hasShownBeachPopup)
             {
                 beachPop.SetActive(true);
                 hasShownBeachPopup = true;
@@ -134,7 +134,7 @@ public class SpawnCollectable : MonoBehaviour
         beachPop.SetActive(false);
         while (pollutionLevel < 100)
         {
-            if (pollutionLevel >= 75 && !hasShownParkPopup)
+            if (pollutionLevel >= 60 && !hasShownParkPopup)
             {
                 parkPop.SetActive(true);
                 hasShownParkPopup = true;
