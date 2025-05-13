@@ -693,6 +693,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UnderTheMap,  1
       objectReference: {fileID: 0}
+    - target: {fileID: 4370583895467713901, guid: 2cdf7d6c00784f64691ae6b46e36f52c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cdf7d6c00784f64691ae6b46e36f52c, type: 3}
