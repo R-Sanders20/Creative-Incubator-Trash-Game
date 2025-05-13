@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9026648167844315960}
-  - component: {fileID: 8226368944336896830}
-  - component: {fileID: 2951735640933860932}
-  - component: {fileID: -6301608034367289138}
+  - component: {fileID: 2715306150659150538}
+  - component: {fileID: 7655962838761243255}
+  - component: {fileID: -9090689046914935086}
   m_Layer: 0
-  m_Name: Sandwich Box Empty Variant 1
+  m_Name: Sandwich Box Empty Variant 2
   m_TagString: Blue Collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,7 +35,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &8226368944336896830
+--- !u!54 &2715306150659150538
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -51,7 +51,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &2951735640933860932
+--- !u!65 &7655962838761243255
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,7 +64,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &-6301608034367289138
+--- !u!65 &-9090689046914935086
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
