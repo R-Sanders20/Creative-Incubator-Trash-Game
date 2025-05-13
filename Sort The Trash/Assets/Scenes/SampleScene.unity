@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44278193, g: 0.49193323, b: 0.5717092, a: 1}
+  m_IndirectSpecularColor: {r: 0.4427983, g: 0.49195004, b: 0.5717248, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14668,6 +14668,8 @@ MonoBehaviour:
   parkAreaSize: {x: 23.82, y: 0, z: 15}
   CollectableInteraction: {fileID: 0}
   spawnSound: {fileID: 165127811}
+  beachPop: {fileID: 0}
+  parkPop: {fileID: 0}
 --- !u!1 &1806931624 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4666721965489763926, guid: 89faeb0ac33542c4a9c680ee750b4a68, type: 3}
@@ -14925,6 +14927,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1870400150}
+  - component: {fileID: 1870400151}
   m_Layer: 0
   m_Name: Park
   m_TagString: Untagged
@@ -14961,6 +14964,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1870400151
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870400149}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 37.20227, y: 27.264828, z: 36.769436}
+  m_Center: {x: -0.63904953, y: 13.132414, z: -0.49514198}
 --- !u!1001 &1871194274
 PrefabInstance:
   m_ObjectHideFlags: 0
