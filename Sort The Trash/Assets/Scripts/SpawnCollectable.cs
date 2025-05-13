@@ -65,12 +65,23 @@ public class SpawnCollectable : MonoBehaviour
             beachCoroutine = StartCoroutine(SpawnBeachCollectablesCoroutine());
         }
 
+        if (CollectableInteraction.parkArea && parkCoroutine == null)
+        {
+            parkCoroutine = StartCoroutine(SpawnParkCollectablesCoroutine());
+        }
+
         //Stops the Collectable scripts when the player is not in the area
 
         if (!CollectableInteraction.starterArea && starterRoomCoroutine != null)
         {
             StopCoroutine(starterRoomCoroutine);
             starterRoomCoroutine = null;
+        }
+
+        if (!CollectableInteraction.parkArea && parkCoroutine != null)
+        {
+            StopCoroutine(parkCoroutine);
+            parkCoroutine = null;
         }
 
         if (!CollectableInteraction.beachArea && beachCoroutine != null)
@@ -147,6 +158,28 @@ public class SpawnCollectable : MonoBehaviour
         }
         Debug.Log("Pollution in Beach Area exceeded 100%");
         beachCoroutine = null; // Reset reference when coroutine ends
+        SceneManager.LoadSceneAsync(2);
+    }
+
+    IEnumerator SpawnParkCollectablesCoroutine()
+    {
+       // beachPop.SetActive(false);
+        while (pollutionLevel < 100)
+        {
+            /*if (pollutionLevel >= 60 && !hasShownParkPopup)
+            {
+                parkPop.SetActive(true);
+                hasShownParkPopup = true;
+                Debug.Log("Park popup shown");
+            }*/
+
+            SpawnCollectableFromArray(parkCollectables, parkAreaPos, parkAreaSize);
+            Debug.Log("Spawned collectable in Park Area at timestamp: " + Time.time);
+            yield return new WaitForSeconds(2);
+            spawnSound.Play();
+        }
+        Debug.Log("Pollution in Park Area exceeded 100%");
+        parkCoroutine = null; // Reset reference when coroutine ends
         SceneManager.LoadSceneAsync(2);
     }
 

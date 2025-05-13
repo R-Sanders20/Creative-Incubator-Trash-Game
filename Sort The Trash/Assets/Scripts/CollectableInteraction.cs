@@ -14,6 +14,7 @@ public class CollectableInteraction : MonoBehaviour
     int greenCollectableStored = 0;
     public static bool starterArea = true;
     public static bool beachArea = false;
+    public static bool parkArea = false;
     public SpawnCollectable spawnCollectableScript; // Links to SpawnCollectable script
     public bool collected;
     public GameObject currentObject;
@@ -169,6 +170,13 @@ public class CollectableInteraction : MonoBehaviour
             Debug.Log("beach Area: " + beachArea);
 
         }
+
+        if (other.CompareTag("parkArea"))
+        {
+            parkArea = true;
+            Debug.Log("Park Area: " + parkArea);
+
+        }
     }
     void OnTriggerExit(Collider other)
     {
@@ -184,6 +192,12 @@ public class CollectableInteraction : MonoBehaviour
         {
             beachArea = false;
             Debug.Log("beach Area: " + beachArea);
+        }
+
+        if (other.CompareTag("parkArea"))
+        {
+            parkArea = false;
+            Debug.Log("Park Area: " + parkArea);
         }
     }
 
