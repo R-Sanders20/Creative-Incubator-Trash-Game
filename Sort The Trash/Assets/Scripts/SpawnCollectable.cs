@@ -11,8 +11,7 @@ public class SpawnCollectable : MonoBehaviour
     public TextMeshProUGUI scoreText;
 
     private double pollutionLevel = 0;
-    public int score = 0;
-    public int ScoreFinal;
+    public static int score = 0;
 
     // Collectable Arrays
     public GameObject[] starterRoomCollectables;
@@ -93,7 +92,6 @@ public class SpawnCollectable : MonoBehaviour
         // Update GUI Pollution text
         pollutionText.text = "Pollution : " + pollutionLevel.ToString() + " %";
         scoreText.text = "Score : " + score;
-        ScoreFinal = score;
     }
 
     // Random Spawning calculation
