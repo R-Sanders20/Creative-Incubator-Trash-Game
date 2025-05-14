@@ -33,7 +33,7 @@ public class SpawnCollectable : MonoBehaviour
     //Collectable Script for the player area checker
     public CollectableInteraction CollectableInteraction; // Links to CollectableInteraction script
 
-    // coroutine's initialised as a null
+    // coroutine's initialised as a nullsurely it
     private Coroutine starterRoomCoroutine = null;
     private Coroutine beachCoroutine = null;
     private Coroutine parkCoroutine = null;
@@ -122,12 +122,14 @@ public class SpawnCollectable : MonoBehaviour
     {
         while (pollutionLevel < 100)
         {
-            if (pollutionLevel >= 20 && !hasShownBeachPopup)
+
+           /* if (pollutionLevel >= 20 && !hasShownBeachPopup)
             {
                 beachPop.SetActive(true);
                 hasShownBeachPopup = true;
                 Debug.Log("Park popup shown");
             }
+           */
 
             SpawnCollectableFromArray(starterRoomCollectables, starterRoomAreaPos, starterRoomAreaSize);
             Debug.Log("Spawned collectable in Starter Room at timestamp: " + Time.time);
@@ -145,12 +147,15 @@ public class SpawnCollectable : MonoBehaviour
         beachPop.SetActive(false);
         while (pollutionLevel < 100)
         {
-            if (pollutionLevel >= 60 && !hasShownParkPopup)
+
+            /*if (pollutionLevel >= 60 && !hasShownParkPopup)
             {
                 parkPop.SetActive(true);
                 hasShownParkPopup = true;
                 Debug.Log("Park popup shown");
             }
+            */
+
             SpawnCollectableFromArray(beachCollectables, beachAreaPos, beachAreaSize);
             Debug.Log("Spawned collectable in Beach Area at timestamp: " + Time.time);
             yield return new WaitForSeconds(2);
@@ -166,12 +171,12 @@ public class SpawnCollectable : MonoBehaviour
        // beachPop.SetActive(false);
         while (pollutionLevel < 100)
         {
-            /*if (pollutionLevel >= 60 && !hasShownParkPopup)
+            if (pollutionLevel >= 60 && !hasShownParkPopup)
             {
                 parkPop.SetActive(true);
                 hasShownParkPopup = true;
                 Debug.Log("Park popup shown");
-            }*/
+            }
 
             SpawnCollectableFromArray(parkCollectables, parkAreaPos, parkAreaSize);
             Debug.Log("Spawned collectable in Park Area at timestamp: " + Time.time);
@@ -186,11 +191,20 @@ public class SpawnCollectable : MonoBehaviour
     // Function for the other collectable script
     public void Deposited()
     {
-        pollutionLevel -= 5;
+        pollutionLevel -= 2.5;
         score++;
     }
 
-    
+    public void Penalty()
+    {
+        pollutionLevel -= 1;
+        if (score > 0)
+        {
+            score--;
+        }
+    }
+
+
     // Visual zones for areas
     void OnDrawGizmos()
     {
