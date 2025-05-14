@@ -13,7 +13,7 @@ public class SpawnCollectable : MonoBehaviour
 
 
     private double pollutionLevel = 0;
-    public int score = 0;
+    public int static score = 0;
     public int streak = 0;
     public int ScoreFinal;
 
