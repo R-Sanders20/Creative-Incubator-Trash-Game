@@ -190,7 +190,10 @@ public class SpawnCollectable : MonoBehaviour
     // Function for the other collectable script
     public void Deposited()
     {
-        pollutionLevel -= 2.5;
+        if (pollutionLevel > 0){
+            pollutionLevel -= 2.5;
+        }
+
         score++;
     }
 
