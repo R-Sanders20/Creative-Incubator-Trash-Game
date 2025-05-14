@@ -9,9 +9,12 @@ public class SpawnCollectable : MonoBehaviour
     //UI Stuff
     public TextMeshProUGUI pollutionText;
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI streakText;
+
 
     private double pollutionLevel = 0;
     public int score = 0;
+    public int streak = 0;
     public int ScoreFinal;
 
     // Collectable Arrays
@@ -93,6 +96,7 @@ public class SpawnCollectable : MonoBehaviour
         // Update GUI Pollution text
         pollutionText.text = "Pollution : " + pollutionLevel.ToString() + " %";
         scoreText.text = "Score : " + score;
+        streakText.text = "Streak: " + streak;
         ScoreFinal = score;
     }
 
@@ -193,6 +197,7 @@ public class SpawnCollectable : MonoBehaviour
     {
         pollutionLevel -= 2.5;
         score++;
+        streak++;
     }
 
     public void Penalty()
@@ -201,6 +206,7 @@ public class SpawnCollectable : MonoBehaviour
         if (score > 0)
         {
             score--;
+            streak = 0;
         }
     }
 
