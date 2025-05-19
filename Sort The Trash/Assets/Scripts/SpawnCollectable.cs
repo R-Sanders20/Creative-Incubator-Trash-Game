@@ -39,15 +39,15 @@ public class SpawnCollectable : MonoBehaviour
 
     public AudioSource spawnSound;
 
-    public GameObject beachPop;
-    public GameObject parkPop;
-    private bool hasShownParkPopup = false;
-    private bool hasShownBeachPopup = false;
+   // public GameObject beachPop;
+    //public GameObject parkPop;
+    //private bool hasShownParkPopup = false;
+    //private bool hasShownBeachPopup = false;
 
     void Start()
     {
-        beachPop.SetActive(false);
-        parkPop.SetActive(false);
+        //beachPop.SetActive(false);
+        //parkPop.SetActive(false);
     }
 
     void Update()
@@ -62,6 +62,7 @@ public class SpawnCollectable : MonoBehaviour
         if (CollectableInteraction.beachArea && beachCoroutine == null)
         {
             beachCoroutine = StartCoroutine(SpawnBeachCollectablesCoroutine());
+            Debug.Log("Begining BeachCoroutine");
         }
 
         if (CollectableInteraction.parkArea && parkCoroutine == null)
@@ -87,6 +88,8 @@ public class SpawnCollectable : MonoBehaviour
         {
             StopCoroutine(beachCoroutine);
             beachCoroutine = null;
+            Debug.Log("Ending BeachCoroutine");
+
         }
 
         // Update GUI Pollution text
@@ -142,7 +145,7 @@ public class SpawnCollectable : MonoBehaviour
     // Beach Collectables Coroutine
     IEnumerator SpawnBeachCollectablesCoroutine()
     {
-        beachPop.SetActive(false);
+        //beachPop.SetActive(false);
         while (pollutionLevel < 100)
         {
             /*
