@@ -43,15 +43,15 @@ public class SpawnCollectable : MonoBehaviour
 
     public AudioSource spawnSound;
 
-    public GameObject beachPop;
-    public GameObject parkPop;
-    private bool hasShownParkPopup = false;
-    private bool hasShownBeachPopup = false;
+    //public GameObject beachPop;
+    //public GameObject parkPop;
+    //private bool hasShownParkPopup = false;
+    //private bool hasShownBeachPopup = false;
 
     void Start()
     {
-        beachPop.SetActive(false);
-        parkPop.SetActive(false);
+        //beachPop.SetActive(false);
+        //parkPop.SetActive(false);
     }
 
     void Update()
@@ -148,7 +148,7 @@ public class SpawnCollectable : MonoBehaviour
     // Beach Collectables Coroutine
     IEnumerator SpawnBeachCollectablesCoroutine()
     {
-        beachPop.SetActive(false);
+        //beachPop.SetActive(false);
         while (pollutionLevel < 100)
         {
 
@@ -175,12 +175,12 @@ public class SpawnCollectable : MonoBehaviour
        // beachPop.SetActive(false);
         while (pollutionLevel < 100)
         {
-            if (pollutionLevel >= 60 && !hasShownParkPopup)
+            /*if (pollutionLevel >= 60 && !hasShownParkPopup)
             {
                 parkPop.SetActive(true);
                 hasShownParkPopup = true;
                 Debug.Log("Park popup shown");
-            }
+            }*/
 
             SpawnCollectableFromArray(parkCollectables, parkAreaPos, parkAreaSize);
             Debug.Log("Spawned collectable in Park Area at timestamp: " + Time.time);
