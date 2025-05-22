@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4355965861770555451}
   m_Layer: 0
   m_Name: Bottle Cap Plastic Variant 1
-  m_TagString: Untagged
+  m_TagString: Blue Collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,7 +34,7 @@ Transform:
   m_Children:
   - {fileID: 3101963338529028474}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1137595211039296488
 Rigidbody:
